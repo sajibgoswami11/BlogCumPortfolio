@@ -1,5 +1,10 @@
 @extends('admin.layouts.app')
 
+
+@section('headSection')
+    <link rel="stylesheet" href="{{ asset('admin/plugins/select2/select2.min.css') }}">
+@endsection
+
 @section('main-content')
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -44,7 +49,7 @@
                 <label for="slug">Post Slug</label>
                 <input type="text" class="form-control" id="slug" name="slug" placeholder="Slug">
               </div>
-            	
+
             </div>
 			<div class="col-lg-6">
               <div class="form-group">
@@ -58,11 +63,11 @@
                   <input type="checkbox" name="status"> Publish
                 </label>
               </div>
-				
+
 			</div>
             </div>
             <!-- /.box-body -->
-			
+
 			<div class="box">
 			  <div class="box-header">
 			    <h3 class="box-title">Write Post Body Here
@@ -90,7 +95,7 @@
         </div>
         <!-- /.box -->
 
-        
+
       </div>
       <!-- /.col-->
     </div>
